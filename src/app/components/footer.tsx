@@ -35,7 +35,7 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/p/Golden-Spark-Car-Wash-Polish-100064062910706/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
@@ -43,7 +43,7 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/goden_spark_car_wash__polish/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition-colors"
@@ -51,12 +51,10 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+97470403005"
                 className="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition-colors"
               >
-                <Twitter className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -151,14 +149,14 @@ export function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
                   <a
-                    href="tel:+97477123456"
+                    href="tel:+97470403005"
                     className="text-white hover:text-blue-400 transition-colors"
                   >
-                    +974 77 123 4567
+                    +974 7040 3005
                   </a>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
@@ -169,7 +167,7 @@ export function Footer() {
                     info@goldenspark.qa
                   </a>
                 </div>
-              </li>
+              </li> */}
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
