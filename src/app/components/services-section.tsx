@@ -106,7 +106,7 @@ export function ServicesSection() {
                     ))}
                   </ul>
 
-                  {/* Price & CTA */}
+                  {/* Price & CTA
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                     <div>
                       <p className="text-sm text-gray-500">Starting from</p>
@@ -120,7 +120,7 @@ export function ServicesSection() {
                     >
                       Select
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>

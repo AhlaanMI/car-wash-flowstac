@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 
 type Service = {
   name: string;
+  nameAr?: string;
   price: number;
   note?: string;
   highlight?: boolean;
@@ -12,32 +13,55 @@ type Service = {
 const services: Service[] = [
   {
     name: "Car Washing Normal (SUV/Sedan)",
+    nameAr: "غسيل سيارات عادي (رفع رباعي / سيدان)",
     price: 30,
     note: "Standard wash for SUVs and sedans",
     highlight: true,
   },
   {
     name: "Washing Normal (Pickup)",
+    nameAr: "غسيل سيارات عادي (بيك اب)",
     price: 40,
     note: "Full wash for pickup trucks",
   },
   {
     name: "Car Washing Only Water",
+    nameAr: "غسيل السيارات بالماء فقط",
     price: 10,
     note: "Quick rinse without shampoo",
   },
   {
     name: "Car Washing Only Water & Shampoo",
+    nameAr: "غسيل السيارات بالماء والشامبو",
     price: 15,
     note: "Rinse with shampoo only",
   },
-  { name: "Car Washing Only Outside", price: 25, note: "Exterior-only wash" },
-  { name: "Body Polishing", price: 350, note: "Full body polish" },
-  { name: "Inside Polishing", price: 350, note: "Interior polish/detail" },
-  { name: "Engine Polishing", price: 100 },
-  { name: "Wheel Cup Polishing", price: 100 },
-  { name: "Remove Small Scratches", price: 50 },
-  { name: "Head Lights Polishing", price: 80 },
+  {
+    name: "Car Washing Only Outside",
+    nameAr: "غسيل السيارات من الخارج فقط",
+    price: 25,
+    note: "Exterior-only wash",
+  },
+  {
+    name: "Body Polishing",
+    nameAr: "تلميع الجسم",
+    price: 350,
+    note: "Full body polish",
+  },
+  {
+    name: "Inside Polishing",
+    nameAr: "تلميع داخل",
+    price: 350,
+    note: "Interior polish/detail",
+  },
+  { name: "Engine Polishing", nameAr: "تلميع المحرك", price: 100 },
+  { name: "Wheel Cup Polishing", nameAr: "تلميع كاب المجلة", price: 100 },
+  { name: "Remove Small Scratches", nameAr: "ازالة الخدوش الصغيرة", price: 50 },
+  {
+    name: "Head Lights Polishing",
+    nameAr: "تلميع المصابيح الامامية",
+    price: 80,
+  },
 ];
 
 export function PricingSection() {
@@ -100,6 +124,17 @@ export function PricingSection() {
                   >
                     {service.name}
                   </h3>
+                  {service.nameAr && (
+                    <p
+                      className={`text-base font-medium mb-2 ${
+                        service.highlight ? "text-blue-100" : "text-gray-700"
+                      }`}
+                      dir="rtl"
+                      style={{ fontFamily: "Inter, sans-serif" }}
+                    >
+                      {service.nameAr}
+                    </p>
+                  )}
                   <div className="flex items-baseline justify-center gap-2">
                     <span
                       className={`text-5xl font-bold ${
