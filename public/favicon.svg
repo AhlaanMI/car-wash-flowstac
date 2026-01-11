@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Car wash icon">
+  <defs>
+    <linearGradient id="bubbles" x1="12" y1="10" x2="52" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ddcff" />
+      <stop offset="1" stop-color="#7f60f9" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0b132b" />
+  <path d="M18 35c0-5 4-9 9-9h10c5 0 9 4 9 9v7H18v-7Z" fill="#1b9bf0" stroke="#e5f2ff" stroke-width="2" stroke-linejoin="round" />
+  <path d="M21 35h22c2.2 0 4 1.8 4 4v3H17v-3c0-2.2 1.8-4 4-4Z" fill="#79d5ff" stroke="#e5f2ff" stroke-width="2" stroke-linejoin="round" />
+  <path d="M22 44c0 2 2 4 4 4h12c2 0 4-2 4-4" fill="none" stroke="#e5f2ff" stroke-width="2" stroke-linecap="round" />
+  <circle cx="24" cy="45" r="4" fill="#0b132b" stroke="#e5f2ff" stroke-width="2" />
+  <circle cx="40" cy="45" r="4" fill="#0b132b" stroke="#e5f2ff" stroke-width="2" />
+  <path d="M16 30c0-2.5 2-4.5 4.5-4.5S25 27.5 25 30m14-2.5c0-2.5 2-4.5 4.5-4.5S48 25 48 27.5" fill="none" stroke="#e5f2ff" stroke-width="2" stroke-linecap="round" />
+  <path d="M26 18c0-2.2 1.8-4 4-4s4 1.8 4 4" fill="none" stroke="#e5f2ff" stroke-width="2" stroke-linecap="round" />
+  <path d="M14 16c0-1.7 1.3-3 3-3s3 1.3 3 3m24-3c0-1.7 1.3-3 3-3s3 1.3 3 3" fill="none" stroke="#e5f2ff" stroke-width="2" stroke-linecap="round" />
+  <path d="M18 12c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7m20 0c0-1.5 1.2-2.7 2.7-2.7S49.7 10.5 49.7 12" fill="none" stroke="#e5f2ff" stroke-width="2" stroke-linecap="round" />
+  <circle cx="24" cy="12" r="3" fill="url(#bubbles)" opacity="0.9" />
+  <circle cx="40" cy="10" r="4" fill="url(#bubbles)" opacity="0.9" />
+  <circle cx="34" cy="16" r="2.5" fill="#7f60f9" opacity="0.8" />
+</svg>
