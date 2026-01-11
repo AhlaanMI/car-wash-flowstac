@@ -1,4 +1,12 @@
-import { Sparkles, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import {
+  Sparkles,
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  Twitter,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,12 +19,19 @@ export function Footer() {
               <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
                 <Sparkles className="w-6 h-6 text-yellow-300" />
               </div>
-              <span className="text-xl font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              <span
+                className="text-xl font-bold"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
                 GOLDEN SPARK
               </span>
             </div>
-            <p className="text-gray-400 mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Premium car wash and detailing services in Doha, Qatar. Making your car shine like new since 2020.
+            <p
+              className="text-gray-400 mb-4"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Premium car wash and detailing services in Doha, Qatar. Making
+              your car shine like new since 2020.
             </p>
             <div className="flex gap-3">
               <a
@@ -48,32 +63,53 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            <h3
+              className="text-lg font-bold mb-4"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
               Quick Links
             </h3>
-            <ul className="space-y-3" style={{ fontFamily: 'Inter, sans-serif' }}>
+            <ul
+              className="space-y-3"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
               <li>
-                <a href="#services" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a
+                  href="#services"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a
+                  href="#pricing"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#booking" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a
+                  href="#booking"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Book Now
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Contact
                 </a>
               </li>
@@ -82,10 +118,16 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            <h3
+              className="text-lg font-bold mb-4"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
               Our Services
             </h3>
-            <ul className="space-y-3 text-gray-400" style={{ fontFamily: 'Inter, sans-serif' }}>
+            <ul
+              className="space-y-3 text-gray-400"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
               <li>Exterior Wash & Wax</li>
               <li>Interior Detailing</li>
               <li>Ceramic Coating</li>
@@ -97,7 +139,10 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            <h3
+              className="text-lg font-bold mb-4"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
               Contact Us
             </h3>
             <ul className="space-y-4">
@@ -105,7 +150,10 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
-                  <a href="tel:+97477123456" className="text-white hover:text-blue-400 transition-colors">
+                  <a
+                    href="tel:+97477123456"
+                    className="text-white hover:text-blue-400 transition-colors"
+                  >
                     +974 77 123 4567
                   </a>
                 </div>
@@ -114,7 +162,10 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <a href="mailto:info@goldenspark.qa" className="text-white hover:text-blue-400 transition-colors">
+                  <a
+                    href="mailto:info@goldenspark.qa"
+                    className="text-white hover:text-blue-400 transition-colors"
+                  >
                     info@goldenspark.qa
                   </a>
                 </div>
@@ -124,7 +175,8 @@ export function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Location</p>
                   <p className="text-white">
-                    شارع الصفصاف<br />
+                    شارع الصفصاف
+                    <br />
                     Doha, Qatar
                   </p>
                 </div>
@@ -134,14 +186,57 @@ export function Footer() {
         </div>
 
         {/* Map Section */}
-        <div className="mb-12 rounded-xl overflow-hidden border border-gray-800">
-          <div className="bg-gray-800 h-64 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-12 h-12 text-blue-400 mx-auto mb-2" />
-              <p className="text-gray-400" style={{ fontFamily: 'Inter, sans-serif' }}>
-                شارع الصفصاف, Doha, Qatar
+        <div className="mb-12 rounded-2xl overflow-hidden border border-gray-800 bg-gray-800/70">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr]">
+            <div className="p-6 md:p-8 flex flex-col gap-4 justify-center">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/50 text-blue-200 text-sm font-semibold w-fit">
+                <MapPin className="w-4 h-4" />
+                Find us
+              </div>
+              <h3
+                className="text-2xl font-bold"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                Golden Spark Car Wash & Polish
+              </h3>
+              <p
+                className="text-gray-300"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                Tap below to open live directions in Google Maps.
               </p>
-              <p className="text-sm text-gray-500 mt-2">Map integration placeholder</p>
+              <a
+                href="https://maps.app.goo.gl/Nn1yvhs67TVtH9WT8"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex items-center gap-2 w-fit rounded-lg bg-gradient-to-r from-blue-500 to-blue-600 px-5 py-3 text-white font-semibold shadow-lg hover:from-blue-600 hover:to-blue-700 transition-colors"
+              >
+                Open in Google Maps
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-4 h-4"
+                >
+                  <path d="M7 17L17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </a>
+            </div>
+
+            <div className="h-[320px] lg:h-full bg-gray-900">
+              <iframe
+                title="Golden Spark Car Wash location"
+                src="https://www.google.com/maps?q=Golden%20Spark%20Car%20Wash%20%26%20Polish%20Qatar&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
@@ -149,7 +244,10 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
+            <p
+              className="text-gray-400 text-sm"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
               © 2026 Golden Spark Car Wash & Polish. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-gray-400">

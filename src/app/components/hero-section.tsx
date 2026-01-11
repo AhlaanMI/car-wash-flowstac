@@ -20,7 +20,11 @@ export function HeroSection() {
         <motion.div
           key={i}
           className="absolute z-10"
-          initial={{ y: -100, x: Math.random() * window.innerWidth, opacity: 0 }}
+          initial={{
+            y: -100,
+            x: Math.random() * window.innerWidth,
+            opacity: 0,
+          }}
           animate={{
             y: window.innerHeight + 100,
             opacity: [0, 1, 1, 0],
@@ -69,15 +73,26 @@ export function HeroSection() {
           {/* Logo/Brand */}
           <motion.div
             className="inline-flex items-center gap-2 mb-6 bg-gradient-to-r from-blue-500 to-blue-600 px-6 py-2 rounded-full"
-            animate={{ boxShadow: ["0 0 20px rgba(0,123,255,0.3)", "0 0 40px rgba(0,123,255,0.6)", "0 0 20px rgba(0,123,255,0.3)"] }}
+            animate={{
+              boxShadow: [
+                "0 0 20px rgba(0,123,255,0.3)",
+                "0 0 40px rgba(0,123,255,0.6)",
+                "0 0 20px rgba(0,123,255,0.3)",
+              ],
+            }}
             transition={{ duration: 2, repeat: Infinity }}
           >
             <Sparkles className="w-6 h-6 text-yellow-300" />
-            <span className="text-white font-semibold text-sm tracking-wide">PREMIUM CAR CARE</span>
+            <span className="text-white font-semibold text-sm tracking-wide">
+              PREMIUM CAR CARE
+            </span>
           </motion.div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
             <span className="bg-gradient-to-r from-blue-400 via-white to-blue-400 bg-clip-text text-transparent">
               GOLDEN SPARK
             </span>
@@ -88,7 +103,7 @@ export function HeroSection() {
           {/* Subheadline */}
           <motion.p
             className="text-xl md:text-2xl text-gray-200 mb-4 max-w-3xl mx-auto"
-            style={{ fontFamily: 'Inter, sans-serif' }}
+            style={{ fontFamily: "Inter, sans-serif" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -98,14 +113,17 @@ export function HeroSection() {
 
           <motion.p
             className="text-base md:text-lg text-gray-300 mb-8 max-w-2xl mx-auto"
-            style={{ fontFamily: 'Inter, sans-serif' }}
+            style={{ fontFamily: "Inter, sans-serif" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Premium car wash, detailing & polish services in <span className="text-blue-400">شارع الصفصاف, Doha, Qatar</span>.
+            Premium car wash, detailing & polish services in{" "}
+            <span className="text-blue-400">شارع الصفصاف, Doha, Qatar</span>.
             <br />
-            <span className="text-yellow-400 font-semibold">Book now and get 20% off your first visit!</span>
+            <span className="text-yellow-400 font-semibold">
+              Book now and get 20% off your first visit!
+            </span>
           </motion.p>
 
           {/* CTA Buttons */}
@@ -118,7 +136,11 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 text-lg shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
-              onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("booking")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               <Sparkles className="mr-2 w-5 h-5" />
               Book Appointment
@@ -126,8 +148,12 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-6 text-lg transition-all duration-300"
-              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+              className="border-2   to-blue-300 hover:bg-white hover:text-blue-600 px-8 py-6 text-lg transition-all duration-300"
+              onClick={() =>
+                document
+                  .getElementById("services")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               View Services
             </Button>
@@ -149,8 +175,18 @@ export function HeroSection() {
               <span className="text-white font-semibold">Eco-Friendly</span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-lg border border-white/20">
-              <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                className="w-5 h-5 text-blue-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
               <span className="text-white font-semibold">Same-Day Service</span>
             </div>
